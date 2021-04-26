@@ -1,7 +1,7 @@
 job ('job example for npm')
 {
 scm {
-git('https://github.com/olszekr1/nodejs.git')
+git('https://github.com/olszekr1/nodejs.git'){node ->
 node / gitConfigName('DSL script')
 node / gitConfigEmail('jenkins-dsl-script@altkom.com')
 }
@@ -23,4 +23,5 @@ nodejs('nodejs')
 
 steps {
 shell("npm test")
+}
 }
