@@ -24,4 +24,3 @@ nodejs('nodejs')
 steps {
 shell("node app.js")
 }
-}
