@@ -22,6 +22,6 @@ nodejs('nodejs')
 
 
 steps {
-shell("nodejs/app.js")
+shell('nodejs/app.js')
 }
 }
